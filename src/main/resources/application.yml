@@ -1,0 +1,28 @@
+
+spring:
+  profiles:
+    active: default
+
+migration:
+  # dev.avocadostudio.xyz
+  url: 210.90.135.104
+  port: 3306
+  schema: BLOCK
+  username: root
+  password: root
+  location: classpath:migration
+
+---
+
+spring:
+  profiles:
+    active: dev
+
+migration:
+  # dev.avocadostudio.xyz
+  url: 210.90.135.104
+  port: 3306
+  schema: BLOCK
+  username: root
+  password: root
+  location: classpath:migration
